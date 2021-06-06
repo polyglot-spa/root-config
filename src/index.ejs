@@ -48,13 +48,13 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@carter-website/navbar-cw": "//localhost:5002/carter-website-navbar-cw.js",
-        "@carter-website/footer-cw": "//localhost:5006/carter-website-footer-cw.js",
-        "@carter-website/homepage-cw": "//localhost:5001/carter-website-homepage-cw.js",
-        "@carter-website/react-cw": "//localhost:5003/carter-website-react-cw.js",
-        "@carter-website/vue-cw": "//localhost:5004/js/app.js",
-        "@carter-website/angular-cw": "//localhost:5005/main.js",
-        "@carter-website/root-config": "//localhost:9000/carter-website-root-config.js"
+        "@polyglot-spa/navbar": "//localhost:5002/polyglot-spa-navbar.js",
+        "@polyglot-spa/footer": "//localhost:5006/polyglot-spa-footer.js",
+        "@polyglot-spa/homepage": "//localhost:5001/polyglot-spa-homepage.js",
+        "@polyglot-spa/react-chess": "//localhost:5003/polyglot-spa-react-chess.js",
+        "@polyglot-spa/vue-chess": "//localhost:5004/js/app.js",
+        "@polyglot-spa/angular-chess": "//localhost:5005/main.js",
+        "@polyglot-spa/root-config": "//localhost:9000/polyglot-spa-root-config.js"
       }
     }
   </script>
@@ -78,7 +78,7 @@
 </head>
 <body style="max-width:1024px;margin:auto;">
   <script>
-    System.import('@carter-website/root-config');
+    System.import('@polyglot-spa/root-config');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
