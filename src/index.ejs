@@ -45,7 +45,21 @@
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
   <% if (isLocal) { %>
-  <script type="systemjs-importmap">
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@polyglot-spa/navbar": "//localhost:5002/polyglot-spa-navbar.js",
+          "@polyglot-spa/footer": "//localhost:5006/polyglot-spa-footer.js",
+          "@polyglot-spa/homepage": "//localhost:5001/polyglot-spa-homepage.js",
+          "@polyglot-spa/react-chess": "//localhost:5003/polyglot-spa-react-chess.js",
+          "@polyglot-spa/vue-chess": "//localhost:5004/js/app.js",
+          "@polyglot-spa/angular-chess": "//localhost:5005/main.js",
+          "@polyglot-spa/root-config": "//localhost:9000/polyglot-spa-root-config.js"
+        }
+      }
+    </script>
+  <% } else { %>
+    <script type="systemjs-importmap">
     {
       "imports": {
         "@polyglot-spa/navbar": "//localhost:5002/polyglot-spa-navbar.js",
@@ -59,7 +73,6 @@
     }
   </script>
   <% } %>
-
   <!--
     If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
     Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
