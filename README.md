@@ -9,7 +9,7 @@ npm install
 ### Compiles and hot-reloads for development
 
 ```
-npm run serve
+npm run start
 http://localhost:9000/polyglot-spa-root-config.js  <- main script
 ```
 
