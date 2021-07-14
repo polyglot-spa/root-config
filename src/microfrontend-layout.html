@@ -1,63 +1,44 @@
 <single-spa-router>
-  <!--
-
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
-
-  -->
   <application name="@polyglot-spa/emitter-storer"></application>
   <nav>
-    <div class="container">
-      <application name="@polyglot-spa/navbar"></application>
-    </div>
+    <application name="@polyglot-spa/navbar"></application>
   </nav>
   <main>
     <route default>
-      <div class="container">
-        <application name="@polyglot-spa/homepage"></application>
-      </div>
+      <application name="@polyglot-spa/homepage"></application>
     </route>
     <route path="react-chess">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <application name="@polyglot-spa/react-chess"></application>
-          </div>
-          <div class="col-sm-4">
-            <application name="@polyglot-spa/game-history"></application>
-          </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <application name="@polyglot-spa/react-chess"></application>
+        </div>
+        <div class="col-sm-4">
+          <application name="@polyglot-spa/game-history"></application>
         </div>
       </div>
     </route>
     <route path="vue-chess">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <application name="@polyglot-spa/vue-chess"></application>
-          </div>
-          <div class="col-sm-4">
-            <application name="@polyglot-spa/game-history"></application>
-          </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <application name="@polyglot-spa/vue-chess"></application>
+        </div>
+        <div class="col-sm-4">
+          <application name="@polyglot-spa/game-history"></application>
         </div>
       </div>
     </route>
     <route path="angular-chess">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <application name="@polyglot-spa/angular-chess"></application>
-          </div>
-          <div class="col-sm-4">
-            <application name="@polyglot-spa/game-history"></application>
-          </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <application name="@polyglot-spa/angular-chess"></application>
+        </div>
+        <div class="col-sm-4">
+          <application name="@polyglot-spa/game-history"></application>
         </div>
       </div>
     </route>
   </main>
-  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <application name="@polyglot-spa/footer"></application>
-    </div>
+    <application name="@polyglot-spa/footer"></application>
   </footer>
 </single-spa-router>
