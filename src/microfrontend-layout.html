@@ -7,24 +7,57 @@
   -->
   <application name="@polyglot-spa/emitter-storer"></application>
   <nav>
-    <application name="@polyglot-spa/navbar"></application>
+    <div class="container">
+      <application name="@polyglot-spa/navbar"></application>
+    </div>
   </nav>
   <main>
     <route default>
-      <application name="@polyglot-spa/homepage"></application>
+      <div class="container">
+        <application name="@polyglot-spa/homepage"></application>
+      </div>
     </route>
     <route path="react-chess">
-      <application name="@polyglot-spa/react-chess"></application>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <application name="@polyglot-spa/react-chess"></application>
+          </div>
+          <div class="col-sm-4">
+            <application name="@polyglot-spa/game-history"></application>
+          </div>
+        </div>
+      </div>
     </route>
     <route path="vue-chess">
-      <application name="@polyglot-spa/vue-chess"></application>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <application name="@polyglot-spa/vue-chess"></application>
+          </div>
+          <div class="col-sm-4">
+            <application name="@polyglot-spa/game-history"></application>
+          </div>
+        </div>
+      </div>
     </route>
     <route path="angular-chess">
-      <application name="@polyglot-spa/angular-chess"></application>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <application name="@polyglot-spa/angular-chess"></application>
+          </div>
+          <div class="col-sm-4">
+            <application name="@polyglot-spa/game-history"></application>
+          </div>
+        </div>
+      </div>
     </route>
   </main>
   <!-- FOOTER -->
-  <footer class="container">
-    <application name="@polyglot-spa/footer"></application>
+  <footer>
+    <div class="container">
+      <application name="@polyglot-spa/footer"></application>
+    </div>
   </footer>
 </single-spa-router>
